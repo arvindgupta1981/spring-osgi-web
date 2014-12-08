@@ -13,8 +13,9 @@
 	<dependencies>
 		<dependency>
 			<groupId>rd.arv</groupId>
-			<artifactId>STUDENT-DAO</artifactId>
+			<artifactId>ABSTRACT-STUDENT-DAO</artifactId>
 			<version>1.0</version>
+			<type>bundle</type>
 			<scope>compile</scope>
 		</dependency>
 	</dependencies>

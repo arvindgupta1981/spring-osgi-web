@@ -15,11 +15,13 @@
 			<artifactId>mysql-connector-java</artifactId>
 			<version>5.1.27</version>
 		</dependency>
-		<!-- <dependency>
-			<groupId>org.springframework</groupId>
-			<artifactId>spring</artifactId>
-			<version>2.5.6.SEC03</version>
-		</dependency> -->
+
+		<dependency>
+			<groupId>rd.arv</groupId>
+			<artifactId>ABSTRACT-STUDENT-DAO</artifactId>
+			<version>1.0</version>
+			<type>bundle</type>
+		</dependency>
 	</dependencies>
 	<build>
 		<plugins>
@@ -40,8 +42,8 @@
 				<configuration>
 					<instructions>
 						<Bundle-SymbolicName>STUDENT-DAO</Bundle-SymbolicName>
-						<Export-Package>arv.db.dao, arv.db.model</Export-Package>
-						<Import-Package>org.osgi.framework</Import-Package>
+						<Export-Package>arv.db.dao.impl</Export-Package>
+						<Import-Package>org.osgi.framework, arv.db.dao, arv.db.model</Import-Package>
 						<Bundle-Vendor>Arvind Gupta</Bundle-Vendor>
 					</instructions>
 				</configuration>
