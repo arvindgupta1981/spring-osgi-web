@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:osgi="http://www.springframework.org/schema/osgi"
+       xmlns:context="http://www.springframework.org/schema/context/spring-context.xsd"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.0.xsd http://www.springframework.org/schema/osgi http://www.springframework.org/schema/osgi/spring-osgi.xsd">
+
+       <bean id="departmentDAOService" class="arv.db.jdbc.dao.impl.JDBCDepartmentDAO" />
+       <bean id="studentDAOService" class="arv.db.jdbc.dao.impl.JDBCStudentDAO" />
+       
+       <osgi:service ref="departmentDAOService" interface="arv.db.dao.DepartmentDAO"/>
+       <osgi:service ref="studentDAOService" interface="arv.db.dao.StudentDAO"/>
+       
+</beans>       
