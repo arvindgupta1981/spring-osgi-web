@@ -7,5 +7,6 @@
   <modules>
   	<module>STUDENT-DAO</module>
   	<module>STUDENT-BUSINESSSERVICE</module>
+  	<module>ABSTRACT-STUDENT-DAO</module>
   </modules>
 </project>
